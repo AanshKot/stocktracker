@@ -5,8 +5,8 @@ type MenuMode = 'horizontal' | 'vertical' | 'inline';
 
 const LeftMenu = ({ mode }:{mode:MenuMode}) => {
   return (
-    <Menu mode={mode}>
-      <Menu.Item key="explore">Explore</Menu.Item>
+    <Menu className="w-full flex justify-center" mode={mode}>
+      <Menu.Item key="explore"><a href="/explore">Explore</a></Menu.Item>
       <Menu.Item key="features">Features</Menu.Item>
       <Menu.Item key="about">About Us</Menu.Item>
       <Menu.Item key="contact">Contact Us</Menu.Item>
